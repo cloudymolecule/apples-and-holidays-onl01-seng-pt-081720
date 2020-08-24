@@ -98,9 +98,8 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.collect do |hol, bbq|
       counter = 0
       if counter <= bbq.length
-        if bbq[counter] = "BBQ"
-          bbq << hol
-        end
+        bbq[counter] = "BBQ"
+        bbq << hol
         counter += 1
       end
     end

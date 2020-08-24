@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, holiday|
       sttr = season.to_s
-      
+
       puts "#{sttr}:"
       holiday.each do |hol, stuff|
         b = stuff.join(", ")

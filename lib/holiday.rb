@@ -80,13 +80,17 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, holiday|
       sttr = season.to_s
-
+      cap = ""
       puts "#{sttr.capitalize}:"
       holiday.each do |hol, stuff|
         b = stuff.join(", ")
         a = hol.to_s
-        a.gsub("_", " ")
-        c = hol.capitalize
+        hol.each do |letter|
+          if letter != "_"
+            result << letter
+          elsif letter == "_"
+            result << " "
+          end
         puts "  #{c}: #{b}"
       end
     end

@@ -86,7 +86,7 @@ def all_supplies_in_holidays(holiday_hash)
         b = stuff.join(", ")
         a = hol.to_s
         result = ""
-        hol.each do |letter|
+        a.each do |letter|
           if letter != "_"
             result << letter
           elsif letter == "_"

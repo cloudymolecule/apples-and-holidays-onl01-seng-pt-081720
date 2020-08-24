@@ -84,7 +84,7 @@ def all_supplies_in_holidays(holiday_hash)
       a = (holi).to_s
       a.gsub("_", " ")
       b = stuff.join(", ")
-      puts "  #{}: #{b}"
+      puts "  #{a}: #{b}"
 
     end
   end

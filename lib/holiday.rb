@@ -84,6 +84,8 @@ def all_supplies_in_holidays(holiday_hash)
       puts "#{sttr.capitalize}:"
       holiday.each do |hol, stuff|
         b = stuff.join(", ")
+        a = hol.to_s
+        a.gsub("_", " ")
         c = hol.capitalize
         c.gsub("_", " ")
         puts "  #{c}: #{b}"

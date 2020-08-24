@@ -99,7 +99,7 @@ def all_holidays_with_bbq(holiday_hash)
       counter = 0
       if counter < bbq.length
         if bbq[counter] = "BBQ"
-          bbq << hol
+          bbq << holiday
         end
         counter += 1
       end

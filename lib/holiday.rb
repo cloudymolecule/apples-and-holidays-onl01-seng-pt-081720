@@ -87,7 +87,6 @@ def all_supplies_in_holidays(holiday_hash)
         a = hol.to_s
         a.gsub("_", " ")
         c = hol.capitalize
-        c.gsub("_", " ")
         puts "  #{c}: #{b}"
       end
     end

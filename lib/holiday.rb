@@ -92,7 +92,8 @@ def all_supplies_in_holidays(holiday_hash)
           elsif letter == "_"
             result << " "
           end
-        puts "  #{result}: #{b}"
+        end
+          puts "  #{result}: #{b}"
       end
     end
 

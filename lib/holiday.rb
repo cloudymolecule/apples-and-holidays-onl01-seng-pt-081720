@@ -85,13 +85,14 @@ def all_supplies_in_holidays(holiday_hash)
       holiday.each do |hol, stuff|
         b = stuff.join(", ")
         a = hol.to_s
+        result = ""
         hol.each do |letter|
           if letter != "_"
             result << letter
           elsif letter == "_"
             result << " "
           end
-        puts "  #{c}: #{b}"
+        puts "  #{result}: #{b}"
       end
     end
 
